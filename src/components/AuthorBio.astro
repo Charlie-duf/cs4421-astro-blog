@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+	name: string;
+	bio: string;
+	avatar: Parameters<typeof Image>[0]['src'];
+	socialLinks: Array<{ label: string; url: string }>;
+}
+
+const { name, bio, avatar, socialLinks } = Astro.props;
+---
+
+<section class="author-bio" aria-labelledby="author-heading">
+	<div class="author-details">
+		<Image class="author-avatar" src={avatar} width={96} height={96} alt={`${name}'s profile avatar`} />
+		<div>
+			<p class="author-label">About the author</p>
+			<h2 id="author-heading">{name}</h2>
+			<p>{bio}</p>
+		</div>
+	</div>
+	{socialLinks.length > 0 && (
+		<nav class="author-links" aria-label={`${name}'s social links`}>
+			{socialLinks.map(({ label, url }) => <a href={url} rel="me noopener noreferrer">{label}</a>)}
+		</nav>
+	)}
+</section>
+
+<style>
+	.author-bio {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid rgb(var(--gray-light));
+	}
+	.author-details {
+		display: flex;
+		gap: 1.25rem;
+		align-items: flex-start;
+	}
+	.author-avatar {
+		flex: 0 0 96px;
+		width: 96px;
+		height: 96px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+	.author-label {
+		margin: 0;
+		color: rgb(var(--gray));
+		font-size: 0.8em;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+	.author-bio h2 {
+		margin: 0.15rem 0 0.4rem;
+		font-size: 1.5em;
+	}
+	.author-bio p {
+		margin: 0;
+	}
+	.author-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem 1.25rem;
+		margin-top: 1.25rem;
+		padding-left: calc(96px + 1.25rem);
+	}
+	.author-links a {
+		font-size: 0.9em;
+		font-weight: 700;
+	}
+	@media (max-width: 520px) {
+		.author-details {
+			flex-direction: column;
+		}
+		.author-links {
+			padding-left: 0;
+		}
+	}
+</style>
