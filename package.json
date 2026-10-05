@@ -12,7 +12,6 @@
     "check": "astro check",
     "lint": "eslint .",
     "astro": "astro",
-    "test:unit": "vitest",
     "test": "vitest"
   },
   "dependencies": {
