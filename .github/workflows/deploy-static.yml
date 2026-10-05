@@ -17,8 +17,8 @@ jobs:
                 node-version: 24
                 cache: 'npm'
 
-            - name: Install Project & CDK Dependencies
-              run: npm ci
+            - name: Change to CDK folder
+              run: cd cdk && npm ci
 
             - name: Build Astro Static Site
               run: npm run build
