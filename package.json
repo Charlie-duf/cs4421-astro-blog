@@ -28,6 +28,7 @@
     "esbuild": true
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "eslint": "^10.11.0",
     "eslint-plugin-astro": "^3.2.1",
     "jiti": "^2.7.0",
