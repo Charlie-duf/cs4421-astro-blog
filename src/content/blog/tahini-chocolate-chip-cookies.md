@@ -3,6 +3,7 @@ title: 'Chewy Tahini Chocolate Chip Cookies'
 description: 'Nutty tahini and dark chocolate make soft-centered cookies with crisp, golden edges.'
 pubDate: 'Oct 13 2026'
 author: 'maya'
+heroImage: '../../assets/Tahini-Chocolate-Chip-Cookies.jpg'
 ---
 
 Tahini adds a subtle toasted flavor to these easy drop cookies and keeps the centers soft. No mixer is needed: a bowl, a whisk, and a short chill are all it takes.

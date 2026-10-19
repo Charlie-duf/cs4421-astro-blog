@@ -3,6 +3,7 @@ title: 'Lemon Blueberry Overnight Oats'
 description: 'A bright, make-ahead breakfast with juicy blueberries, creamy oats, and fresh lemon.'
 pubDate: 'Oct 17 2026'
 author: 'maya'
+heroImage: '../../assets/Lemon-Blueberry-Overnight-Oats.jpg'
 ---
 
 These overnight oats take a few minutes to stir together the night before and are ready to eat straight from the fridge in the morning. Lemon zest keeps them fresh and fragrant, while chia seeds help make the texture thick and creamy.

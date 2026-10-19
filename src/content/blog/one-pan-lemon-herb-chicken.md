@@ -3,6 +3,7 @@ title: 'One-Pan Lemon Herb Chicken and Potatoes'
 description: 'Golden chicken thighs and tender potatoes roast together with lemon, garlic, and rosemary for an easy dinner.'
 pubDate: 'Oct 15 2026'
 author: 'maya'
+heroImage: '../../assets/Lemon-herb-chicken.jpg'
 ---
 
 Bone-in chicken thighs stay juicy while the potatoes roast underneath and soak up all the lemony pan juices. A sturdy roasting pan means less washing up and an easy dinner to share.
