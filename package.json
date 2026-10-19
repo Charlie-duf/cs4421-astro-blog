@@ -12,7 +12,8 @@
     "check": "astro check",
     "lint": "eslint .",
     "astro": "astro",
-    "test": "vitest"
+    "test": "vitest",
+    "test:unit": "vitest run src"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
