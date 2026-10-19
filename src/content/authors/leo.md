@@ -1,7 +1,7 @@
 ---
 name: 'Leo Martins'
-bio: 'A frontend engineer exploring design systems, performance, and the small improvements that make interfaces feel effortless.'
-avatar: '../../assets/blog-placeholder-2.jpg'
+bio: 'I have travelled the world to find, prepare and taste the best recipes humanity has created, in this blog you will be astounded by the flavour and warmth present in my favourite dishes.'
+avatar: '../../assets/Chef-Leo.jpeg'
 socialLinks:
   - label: 'GitHub'
     url: 'https://github.com/leomartins'

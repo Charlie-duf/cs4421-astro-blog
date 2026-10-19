@@ -3,6 +3,7 @@ title: 'Weeknight Chickpea and Coconut Curry'
 description: 'A comforting vegan curry with chickpeas, spinach, and a gently spiced coconut-tomato sauce.'
 pubDate: 'Oct 16 2026'
 author: 'leo'
+heroImage: '../../assets/Coconut-Chickpea-Curry.jpg'
 ---
 
 This pantry-friendly curry is rich enough to feel cozy but quick enough for a weeknight. The chickpeas simmer in a warmly spiced coconut sauce, and a handful of spinach goes in at the end for a fresh finish.

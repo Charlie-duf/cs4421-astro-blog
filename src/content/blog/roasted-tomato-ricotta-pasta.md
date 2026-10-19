@@ -3,6 +3,7 @@ title: 'Roasted Tomato and Ricotta Pasta'
 description: 'Sweet roasted cherry tomatoes become a simple, silky sauce for pasta, creamy ricotta, and fresh basil.'
 pubDate: 'Oct 14 2026'
 author: 'leo'
+heroImage: '../../assets/Roasted-Tomato-Ricotta-Pasta.jpg'
 ---
 
 Roasting tomatoes concentrates their sweetness and creates a no-fuss sauce right in the baking dish. A little pasta water brings everything together, while cool spoonfuls of ricotta make each bowl creamy.
