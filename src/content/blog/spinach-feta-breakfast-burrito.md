@@ -3,6 +3,7 @@ title: 'Spinach & Feta Breakfast Burrito'
 description: 'A hearty breakfast burrito packed with eggs, spinach, beans, and feta for an easy morning win.'
 pubDate: 'Oct 18 2026'
 author: 'leo'
+heroImage: '../../assets/Spinach-feta-burrito.jpeg'
 ---
 
 ## Spinach & Feta Breakfast Burrito
