@@ -3,6 +3,7 @@ title: 'Garlic Herb Salmon Sheet Pan'
 description: 'A simple and elegant sheet-pan dinner with salmon, potatoes, and green beans all roasted together.'
 pubDate: 'Oct 21 2026'
 author: 'maya'
+heroImage: '../../assets/Lemon-garlic-salmon-traybake.jpeg'
 ---
 
 ## Garlic Herb Salmon Sheet Pan
