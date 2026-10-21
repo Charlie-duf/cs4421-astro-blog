@@ -1,14 +1,14 @@
 name: Deploy Container to AWS
 on:
     push:
-        branches: [19-add-server-side-rendering]
+        branches: [main]
 
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: npm ci && npm run test:unit # 1. Quality Gate
+            - run: npm ci && npm ci --prefix cdk && npm run test:unit # 1. Quality Gate
             
             - name: Configure AWS Credentials
               uses: aws-actions/configure-aws-credentials@v4
