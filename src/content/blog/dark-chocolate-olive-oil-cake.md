@@ -3,6 +3,7 @@ title: 'Dark Chocolate Olive Oil Cake'
 description: 'A rich, moist chocolate cake with a delicate olive oil finish and a deep cocoa flavor.'
 pubDate: 'Oct 19 2026'
 author: 'maya'
+heroImage: '../../assets/Chocolate-olive-oil-cake.jpeg'
 ---
 
 ## Dark Chocolate Olive Oil Cake

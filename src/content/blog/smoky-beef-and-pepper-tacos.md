@@ -3,6 +3,7 @@ title: 'Smoky Beef & Pepper Tacos'
 description: 'A quick taco night favorite with seasoned beef, peppers, and a smoky chili finish.'
 pubDate: 'Oct 22 2026'
 author: 'leo'
+heroImage: '../../assets/Beef-pepper-tacos.jpeg'
 ---
 
 ## Smoky Beef & Pepper Tacos
