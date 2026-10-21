@@ -1,7 +1,7 @@
 name: Deploy Container to AWS
 on:
     push:
-        branches: [main]
+        branches: [19-add-server-side-rendering]
 
 jobs:
     build-and-deploy:
