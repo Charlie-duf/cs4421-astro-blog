@@ -3,7 +3,6 @@ title: 'Tuscan White Bean & Kale Soup'
 description: 'A rich, comforting vegan soup with cannellini beans, kale, tomatoes, and a touch of rosemary.'
 pubDate: 'Oct 20 2026'
 author: 'leo'
-heroImage: '../../assets/kale-white-bean-soup.jpeg'
 ---
 
 ## Tuscan White Bean & Kale Soup
