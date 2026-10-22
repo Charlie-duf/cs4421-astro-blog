@@ -13,13 +13,42 @@ export class StaticSiteStack extends cdk.Stack {
       autoDeleteObjects: true,
     });
 
+    const siteRoutingFunction = new cloudfront.Function(this, 'SiteRoutingFunction', {
+      code: cloudfront.FunctionCode.fromInline(`
+function handler(event) {
+  var request = event.request;
+  var uri = request.uri;
+
+  if (uri.indexOf('/api/') === 0) {
+    return request;
+  }
+
+  if (uri.charAt(uri.length - 1) === '/') {
+    request.uri = uri + 'index.html';
+  } else if (uri.substring(uri.lastIndexOf('/') + 1).indexOf('.') === -1) {
+    request.uri = uri + '/index.html';
+  }
+
+  return request;
+}
+      `),
+    });
+
     const distribution = new cloudfront.Distribution(this, 'SiteDistribution', {
-      defaultBehavior: { origin: origins.S3BucketOrigin.withOriginAccessControl(siteBucket) },
+      defaultBehavior: {
+        origin: origins.S3BucketOrigin.withOriginAccessControl(siteBucket),
+        functionAssociations: [
+          {
+            eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+            function: siteRoutingFunction,
+          },
+        ],
+      },
       defaultRootObject: 'index.html',
     });
 
     new s3deploy.BucketDeployment(this, 'DeploySite', {
-      sources: [s3deploy.Source.asset('./../dist')],
+      sources: [s3deploy.Source.asset('./../dist/client')],
       destinationBucket: siteBucket,
       distribution,
       distributionPaths: ['/*'], // Automatic CloudFront CDN cache invalidation!
