@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 //import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import ChefLeoImage from '../assets/profile.jpg';
+import profile from '../assets/profile.jpg';
 import Layout from '../layouts/BlogPost.astro';
 ---
 
@@ -50,20 +50,19 @@ import Layout from '../layouts/BlogPost.astro';
 	title="About Me"
 	description="About the blog's creator."
 	pubDate={new Date('Oct 11, 2026')}
-	
 >
 	<p>
 		Welcome to my food blog, on this site you will find a new tasty recipe posted every day. If you would like to contact me (to request a feature or a specific recipe, my socials are liked below). 
 	</p>
 
-	<section class="chef-profile" aria-labelledby="leo-heading">
-		<Image class="chef-photo" src={ChefLeoImage} alt="Chef Leo Martins" />
+	<section class="chef-profile" aria-labelledby="charlie-heading">
+		<Image class="chef-photo" src={profile} alt="profile photo" />
 		<div>
-			<h2 id="leo-heading">Charlie Duffy</h2>
+			<h2 id="charlie-heading">Charlie Duffy</h2>
 			<p>
 				
 			</p>
-			<ul class="chef-links" aria-label="Leo Martins around the web">
+			<ul class="chef-links" aria-label="Charlie Duffy">
 				<li><a href="https://github.com/Charlie-duf" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 				<li>
 					<a
