@@ -11,7 +11,7 @@ type Props = Omit<CollectionEntry<'blog'>['data'], 'author'> & {
 	author?: CollectionEntry<'authors'>['data'];
 };
 
-const { title, description, pubDate, updatedDate, heroImage, author } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, estimatedTime, author } = Astro.props;
 ---
 
 <html lang="en">
@@ -52,6 +52,10 @@ const { title, description, pubDate, updatedDate, heroImage, author } = Astro.pr
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
 			}
+			.estimated-time {
+				margin: 0 0 1rem;
+				color: rgb(var(--gray));
+			}
 			.last-updated-on {
 				font-style: italic;
 			}
@@ -77,6 +81,7 @@ const { title, description, pubDate, updatedDate, heroImage, author } = Astro.pr
 								)
 							}
 						</div>
+						<p class="estimated-time">Estimated time: {estimatedTime}</p>
 						<h1>{title}</h1>
 						<hr />
 					</div>

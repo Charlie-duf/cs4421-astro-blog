@@ -1,8 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 //import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import ChefLeoImage from '../assets/Chef-Leo.jpeg';
-import ChefMayaImage from '../assets/Chef-Maya.jpeg';
+import ChefLeoImage from '../assets/profile.jpg';
 import Layout from '../layouts/BlogPost.astro';
 ---
 
@@ -48,51 +47,31 @@ import Layout from '../layouts/BlogPost.astro';
 </style>
 
 <Layout
-	title="About Us"
-	description="Meet Leo Martins and Maya Chen, the chefs behind our recipes."
+	title="About Me"
+	description="About the blog's creator."
 	pubDate={new Date('Oct 11, 2026')}
 	
 >
 	<p>
-		Welcome to our kitchen! We’re Leo Martins and Maya Chen, two chefs who share a love of food and
-		the stories behind every dish. We create recipes that bring comforting, satisfying meals within
-		easy reach, whether you’re cooking for a busy morning or gathering around the table.
+		Welcome to my food blog, on this site you will find a new tasty recipe posted every day. If you would like to contact me (to request a feature or a specific recipe, my socials are liked below). 
 	</p>
 
 	<section class="chef-profile" aria-labelledby="leo-heading">
 		<Image class="chef-photo" src={ChefLeoImage} alt="Chef Leo Martins" />
 		<div>
-			<h2 id="leo-heading">Leo Martins</h2>
+			<h2 id="leo-heading">Charlie Duffy</h2>
 			<p>
-				Leo’s cooking is inspired by his travels and the recipes he’s discovered, prepared, and
-				tasted around the world. He brings those flavors to the blog in dishes like chickpea coconut
-				curry, roasted tomato ricotta pasta, and smoky beef and pepper tacos.
+				
 			</p>
 			<ul class="chef-links" aria-label="Leo Martins around the web">
-				<li><a href="https://github.com/leomartins" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+				<li><a href="https://github.com/Charlie-duf" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 				<li>
 					<a
-						href="https://www.linkedin.com/in/leomartins"
+						href="https://www.linkedin.com/in/charles-duffy-3a03a8355/"
 						target="_blank"
 						rel="noopener noreferrer">LinkedIn</a
 					>
 				</li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="chef-profile" aria-labelledby="maya-heading">
-		<Image class="chef-photo" src={ChefMayaImage} alt="Chef Maya Chen" />
-		<div>
-			<h2 id="maya-heading">Maya Chen</h2>
-			<p>
-				Maya’s love of food began in childhood, cooking alongside her grandmother, and it has
-				stayed with her ever since. She shares that warmth in recipes such as one-pan lemon herb
-				chicken, tahini chocolate chip cookies, and dark chocolate olive oil cake.
-			</p>
-			<ul class="chef-links" aria-label="Maya Chen around the web">
-				<li><a href="https://github.com/mayac" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-				<li><a href="https://x.com/mayac" target="_blank" rel="noopener noreferrer">X</a></li>
 			</ul>
 		</div>
 	</section>
