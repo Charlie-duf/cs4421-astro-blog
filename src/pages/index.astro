@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import PlateImage from '../assets/plate.jpeg';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -9,30 +11,43 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.plate-image {
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: 0 auto 2rem;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
+			<Image
+				class="plate-image"
+				src={PlateImage}
+				alt="An empty plate with a fork and knife"
+			/>
 			<section aria-labelledby="welcome-heading">
-				<h1 id="welcome-heading">Welcome to our food blog!</h1>
+				<h1 id="welcome-heading">Welcome to my food blog!</h1>
 				<p>
-					We’re Leo Martins and Maya Chen, two expert chefs. We focus on creating approachable recipes that are easy to follow and delicious to eat. Our goal is to inspire you to cook more at home and enjoy the process of making food.
+					My name is Charlie Duffy, I'm a first year student at Limerick Univeristy studying software engineering. One of my favourite things in this world is food, be it preparing food or eating food. 
+					As such, over my life I have accumulated a multitude of recipes that make the very best food.
 				</p>
 			</section>
 
 			<section aria-labelledby="about-heading">
 				<h2 id="about-heading">New recipes every day!</h2>
 				<p>
-					This site contains a collection of approachable recipes inspired by the flavors and food stories
-					we love. We pride ourselves on being able to create diverse recipes so there should be a recipe for everyone!
-					Furthermore, we add a new recipe every day, so be sure to check back often for new content (or sign up to our newsletter to never miss out)!
+					This site contains a variety of simple, easy to make recipes. Have a look around, theres likely at leas one meal you'll enjoy!
+					I'll add a new recipe every day, so be sure to check back often for new content!
 
 				</p>
-				<p>Want to request a specific recipe? <a href="/about"> Contact us!</a></p>
+				<p>Want to request a specific recipe or feature? <a href="/about"> Contact me!</a></p>
 			
 				<ol>
 					<li><a href="/blog">Browse the recipes</a></li>
-					<li><a href="/about"> About us!</a></li>
+					<li><a href="/about"> About me!</a></li>
 				</ol>
 			</section>
 		</main>
