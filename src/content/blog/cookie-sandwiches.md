@@ -9,6 +9,8 @@ heroImage: '../../assets/cookie-sandwich.jpeg'
 
 My grandparents gifted my Avoca's at home cookbook for my birthday and this was one of my favourites. Both the cookies and the filling keep for a long time so I usually make big batches and freeze them.
 It can be difficult to find quality hazelnut butter in most supermarkets, but its well worth it. If necessary you can make this recipe with almond or peanut butter.
+<br>
+*If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.*
 
 ## Ingredients
 

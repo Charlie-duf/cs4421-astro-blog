@@ -10,6 +10,8 @@ heroImage: '../../assets/chocolate-orange-cake.jpeg'
 ---
 
 This recipe was given to me by my godmother and it is one of my favourite meals to bring as a housewarming gift. The recipe itself is incredibly simple to follow and it makes one of, if not the moistest, richest cake I've ever had. Put this cake in the refrigerator for an hour before serving to get the best results.
+<br>
+*Food for thought is no substitute for the real thing.*
 
 ### Ingredients
 

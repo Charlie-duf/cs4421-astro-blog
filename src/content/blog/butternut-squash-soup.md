@@ -11,6 +11,8 @@ heroImage: '../../assets/Butternut-soup.jpeg'
 This is definetely one of my favourite foods for a cold day. The chilies in this dish help warm you up but they don't overpower the squashes flavours making for a suprisingly filling dish.
 <br>
 This warm and filling soup pairs perfectly with yesterdays soda bread.
+<br>
+*Every ingredient tells a story of the earth's bounty.*
 
 ## Ingredients
 

@@ -9,6 +9,8 @@ heroImage: '../../assets/golden-milk.jpeg'
 ---
 
 My godmother sent this recipe to me when I was sick, its a south asian spice mix to reduce inflammation, help digestion, and aid sleep. I always have a bit of the mixture available in a small jar for whenever I need it.
+<br>
+*Let food be thy medecine and medecine be thy food.*
 
 ## Ingredients
 

@@ -11,6 +11,8 @@ I learned this recipe in home economics and I've made it at least once every 3 m
 <br>
 I love this recipe because its so versitile, you can serve it for breakfast, lunch, dinner, or dessert by only modifying the filling in the crepe.
 This is the simplest recipe you'll find on this site. Its so simple that I know it off by heart.
+<br>
+*People who love to eat are always the best people.*
 
 
 ## Ingredients

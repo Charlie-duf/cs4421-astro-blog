@@ -11,6 +11,8 @@ heroImage: '../../assets/mint-sauce.jpeg'
 ---
 
 This sauce is an Easter classic and goes perfectly with roast lamb or rabbit, I make a large batch of this in preparation for our family's Easter lunch. We have a couple mint plants that grow in our front lawn so sourcing the fresh mint is incredibly easy.
+<br>
+*One cannot think well, love well, sleep well, if one has not dined well.*
 
 ## Ingredients 
 

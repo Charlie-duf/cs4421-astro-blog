@@ -10,7 +10,8 @@ heroImage: '../../assets/pizza.jpeg'
 ---
 
 I learnt this recipe during my first year in home economics and have tried to make it at least once a year, overall I find it's much cheaper than ordering a pizza and usually fresher and tastier too!
-
+<br>
+*Cooking is like love. It should be entered into with abandon or not at all*
 
 ## Ingredients 
 

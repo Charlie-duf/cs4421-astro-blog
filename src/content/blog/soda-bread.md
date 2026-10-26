@@ -8,6 +8,8 @@ heroImage: '../../assets/soda-bread.jpeg'
 ---
 
 Every St Patrick's day my family meet up at one of our houses and have a family dinner. Each time I try to bring some kind of traditional Irish food. This year I brought this delicious soda bread, the recipe of which I learned on a school trip to Causey Farm. 
+<br>
+*A recipe has no soul. You as the cook, must bring soul to the recipe*
 
 ## Ingredients
 

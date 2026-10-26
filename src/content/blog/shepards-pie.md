@@ -8,7 +8,10 @@ heroImage: '../../assets/shepards-pie.jpeg'
 ---
 
 This is another one of the best winter foods in my opinion. It's incredibly filling and makes for a delicious dinner when its cold and dreary outside.
-I got the base recipe from a Jamie Oliver cookbook but I've since modified it to meet my own tastes.
+<br>
+I got the base recipe from a Jamie Oliver cookbook but I've since modified it to meet my own tastes. This recipe is perfect for using up old vegetables.
+<br>
+*Even vegetable scraps have their uses*
 
 ## Ingredients
 

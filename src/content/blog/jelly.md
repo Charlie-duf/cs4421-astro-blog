@@ -12,6 +12,8 @@ heroImage: '../../assets/jelly.jpeg'
 Need uses for yesterday's syrup? Check out this recipe!
 <br>
 Jelly is definitely one of my favourite desserts, serve this recipe with a proper vanilla icecream and whole whipped cream and you'll see why I love it so much!
+<br>
+*Eat what makes your soul happy!*
 
 ## Ingredients 
 

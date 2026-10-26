@@ -11,6 +11,8 @@ heroImage: '../../assets/roasted-cauliflower-and-chickpea-salad.jpg'
 ---
 
 Another one of my mother's recipes. This one makes for a very healthy yet delicous side salad. I'm not really a fan of cauliflower but this dish is still tasty.
+<br>
+*When the world wearies, and society ceases to satisfy, there is always the garden.*
 
 ## Ingredients 
 

@@ -11,6 +11,8 @@ heroImage: '../../assets/meatballs.jpeg'
 For a family of incredibly talented cooks, we don't have really have any family recipes to be passed down, this meatball recipe is the only exception. My grandmother used to cook this recipe for her children and when I was younger. She gave this recipe to me.
 <br>
 I'm a big fan of hefty meals and this one is probably the best recipe you'll find on this site.
+<br>
+*Friends don't let friends eat alone in the dark.*
 
 ## Ingredients
 

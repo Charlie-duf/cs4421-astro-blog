@@ -11,6 +11,8 @@ heroImage: '../../assets/raspberry-syrup-jam.jpeg'
 ---
 
 I got this recipe from the Ballymaloe dessert book and its well worth making this from scratch rather than buying premade. This recipe makes a tasty raspberry syrup as well as a lot of jam for toast.
+<br>
+*All happiness depends on a leisurely breakfast.*
 
 ## Ingredients 
 

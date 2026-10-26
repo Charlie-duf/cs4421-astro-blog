@@ -10,7 +10,8 @@ heroImage: '../../assets/chili-prawns.jpg'
 ---
 
 My mother came up with this recipe as a way to use up some prawns and it became a classic dish in my household. My only complaint with this dish is that theres never enough for seconds.
-
+<br>
+*Food is the most primitive form of comfort.*
 
 ## Ingredients
 
