@@ -4,13 +4,16 @@ description: 'An incredibly umami tomato pasta dish'
 pubDate: 'Oct 14 2026'
 author: 'charles'
 estimatedTime: 'About 40 minutes'
+isVegan: True
+isDairyFree: True
 heroImage: '../../assets/pasta-ai-quattro-pomodori.jpg'
 ---
 
 Literally 'Pasta with four types of tomatoes', this recipe was sent to me by a family friend and it is incredibly simple and delicious. Through this recipe I discovered a love for the umami flavour (and also what umami was).
 <br>
 The mix of dried tomatoes and puree (two of my favourite ingredients) make this one of my go to comfort foods whenever I'm hungry.
-
+<br>
+*Good food is the foundation of genuine happiness*
 
 ## Ingredients
 

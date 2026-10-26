@@ -12,6 +12,9 @@ const blog = defineCollection({
 			description: z.string(),
 			author: z.string(),
 			estimatedTime: z.string(),
+			isVegan: z.boolean().default(false),
+			isGlutenFree: z.boolean().default(false),
+			isDairyFree: z.boolean().default(false),
 			// Transform string to Date object
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
