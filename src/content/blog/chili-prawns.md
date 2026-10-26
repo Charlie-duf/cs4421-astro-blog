@@ -4,6 +4,8 @@ description: 'Hot and tangy prawn dish'
 pubDate: 'Oct 22 2026'
 author: 'charles'
 estimatedTime: '20-30 mins'
+isGlutenFree: True
+isDairyFree: True
 heroImage: '../../assets/chili-prawns.jpg'
 ---
 

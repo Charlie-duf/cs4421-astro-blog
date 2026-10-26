@@ -4,6 +4,7 @@ description: 'A hefty and tangy spaghetti meatball recipe'
 pubDate: 'Oct 20 2026'
 author: 'charles'
 estimatedTime: '1 hour 30 minutes'
+isDairyFree: True
 heroImage: '../../assets/meatballs.jpeg'
 ---
 

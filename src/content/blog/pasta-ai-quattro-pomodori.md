@@ -4,6 +4,8 @@ description: 'An incredibly umami tomato pasta dish'
 pubDate: 'Oct 14 2026'
 author: 'charles'
 estimatedTime: 'About 40 minutes'
+isVegan: True
+isDairyFree: True
 heroImage: '../../assets/pasta-ai-quattro-pomodori.jpg'
 ---
 

@@ -4,6 +4,9 @@ description: 'Sweet and vinegry with a sharp aftertaste'
 pubDate: 'Oct 27 2026'
 author: 'charles'
 estimatedTime: '30 minutes'
+isVegan: true
+isGlutenFree: True
+isDairyFree: true
 heroImage: '../../assets/mint-sauce.jpeg'
 ---
 

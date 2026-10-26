@@ -4,6 +4,9 @@ description: 'Crunchy and crispy roast potato recipe'
 pubDate: 'Oct 28 2026'
 author: 'charles'
 estimatedTime: '1 hour 40 minutes'
+isGlutenFree: True
+isVeagn: True
+isDairyFree: True
 heroImage: '../../assets/roast-potatos.jpeg'
 ---
 

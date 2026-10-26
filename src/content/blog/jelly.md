@@ -4,6 +4,8 @@ description: 'Sweet and wobbly, goes well with icecream'
 pubDate: 'Oct 24 2026'
 author: 'charles'
 estimatedTime: '10 minutes (plus overnight)'
+isGlutenFree: True
+isDairyFree: True
 heroImage: '../../assets/jelly.jpeg'
 ---
 

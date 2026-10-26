@@ -20,6 +20,38 @@ const posts = (await getCollection('blog')).sort(
 			main {
 				width: 960px;
 			}
+			.filters {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				margin: 0 0 1rem;
+			}
+			.filter-field {
+				display: grid;
+				gap: 0.35rem;
+			}
+			.filter-field input,
+			.filter-field select {
+				min-height: 2.5rem;
+				padding: 0.4rem 0.6rem;
+				font: inherit;
+			}
+			#result-count {
+				color: rgb(var(--gray));
+				margin: 0 0 1rem;
+			}
+			.recipe-status {
+				display: inline-block;
+				margin: 0.5rem 0 0;
+				padding: 0.15rem 0.5rem;
+				border: 1px solid currentColor;
+				border-radius: 999px;
+				font-size: 0.85rem;
+			}
+			#no-results[hidden],
+			[data-recipe][hidden] {
+				display: none;
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -78,10 +110,54 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
-				<ul>
+				<h1>Recipes</h1>
+				<div class="filters" role="group" aria-label="Filter recipes">
+					<div class="filter-field">
+						<label for="recipe-search">Search recipes</label>
+						<input
+							id="recipe-search"
+							type="search"
+							placeholder="Try a dish or ingredient"
+							autocomplete="off"
+						/>
+					</div>
+					<div class="filter-field">
+						<label for="vegan-filter">Vegan</label>
+						<select id="vegan-filter">
+							<option value="all">All recipes</option>
+							<option value="true">Vegan</option>
+							<option value="false">Not vegan</option>
+						</select>
+					</div>
+					<div class="filter-field">
+						<label for="gluten-free-filter">Gluten-free</label>
+						<select id="gluten-free-filter">
+							<option value="all">All recipes</option>
+							<option value="true">Gluten-free</option>
+							<option value="false">Not gluten-free</option>
+						</select>
+					</div>
+					<div class="filter-field">
+						<label for="dairy-free-filter">Dairy-free</label>
+						<select id="dairy-free-filter">
+							<option value="all">All recipes</option>
+							<option value="true">Dairy-free</option>
+							<option value="false">Not dairy-free</option>
+						</select>
+					</div>
+				</div>
+				<p id="result-count" role="status" aria-live="polite"></p>
+				<p id="no-results" hidden>No recipes match these filters.</p>
+				<ul id="recipe-list">
 					{
 						posts.map((post) => (
-							<li>
+							<li
+								data-recipe
+								data-vegan={post.data.isVegan}
+								data-gluten-free={post.data.isGlutenFree}
+								data-dairy-free={post.data.isDairyFree}
+								data-search={`${post.data.title} ${post.data.description} ${post.body}`}
+							>
 								<a href={`/blog/${post.id}/`}>
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
@@ -91,6 +167,15 @@ const posts = (await getCollection('blog')).sort(
 										<FormattedDate date={post.data.pubDate} />
 									</p>
 									<p class="time">Estimated time: {post.data.estimatedTime}</p>
+									<p class="recipe-status">
+										{post.data.isVegan ? 'Vegan' : 'Not Vegan'}
+									</p>
+									<p class="recipe-status">
+										{post.data.isGlutenFree ? 'Gluten Free' : 'Not Gluten Free'}
+									</p>
+									<p class="recipe-status">
+										{post.data.isDairyFree ? 'Dairy Free' : 'Not Dairy Free'}
+									</p>
 								</a>
 							</li>
 						))
@@ -99,5 +184,68 @@ const posts = (await getCollection('blog')).sort(
 			</section>
 		</main>
 		<Footer />
+		<script>
+			const searchInput = document.querySelector<HTMLInputElement>('#recipe-search');
+			const veganFilter = document.querySelector<HTMLSelectElement>('#vegan-filter');
+			const glutenFreeFilter = document.querySelector<HTMLSelectElement>('#gluten-free-filter');
+			const dairyFreeFilter = document.querySelector<HTMLSelectElement>('#dairy-free-filter');
+			const recipeCards = document.querySelectorAll<HTMLElement>('[data-recipe]');
+			const resultCount = document.querySelector<HTMLElement>('#result-count');
+			const noResults = document.querySelector<HTMLElement>('#no-results');
+
+			if (
+				!searchInput ||
+				!veganFilter ||
+				!glutenFreeFilter ||
+				!dairyFreeFilter ||
+				!resultCount ||
+				!noResults
+			) {
+				throw new Error('Recipe filters could not be initialized.');
+			}
+
+			const searchField: HTMLInputElement = searchInput;
+			const veganSelect: HTMLSelectElement = veganFilter;
+			const glutenFreeSelect: HTMLSelectElement = glutenFreeFilter;
+			const dairyFreeSelect: HTMLSelectElement = dairyFreeFilter;
+			const countMessage: HTMLElement = resultCount;
+			const emptyMessage: HTMLElement = noResults;
+
+			function filterRecipes() {
+				const query = searchField.value.trim().toLocaleLowerCase();
+				const veganSelection = veganSelect.value;
+				const glutenFreeSelection = glutenFreeSelect.value;
+				const dairyFreeSelection = dairyFreeSelect.value;
+				let visibleCount = 0;
+
+				recipeCards.forEach((card) => {
+					const matchesSearch = (card.dataset.search ?? '')
+						.toLocaleLowerCase()
+						.includes(query);
+					const matchesVegan =
+						veganSelection === 'all' || card.dataset.vegan === veganSelection;
+					const matchesGlutenFree = 
+						glutenFreeSelection === 'all' ||
+						card.dataset.glutenFree === glutenFreeSelection;
+					const matchesDairyFree =
+						dairyFreeSelection === 'all' ||
+						card.dataset.dairyFree === dairyFreeSelection;
+					const isVisible =
+						matchesSearch && matchesVegan && matchesGlutenFree && matchesDairyFree;
+
+					card.hidden = !isVisible;
+					if (isVisible) visibleCount += 1;
+				});
+
+				countMessage.textContent = `Showing ${visibleCount} of ${recipeCards.length} recipes`;
+				emptyMessage.hidden = visibleCount > 0;
+			}
+
+			searchField.addEventListener('input', filterRecipes);
+			veganSelect.addEventListener('change', filterRecipes);
+			glutenFreeSelect.addEventListener('change', filterRecipes);
+			dairyFreeSelect.addEventListener('change', filterRecipes);
+			filterRecipes();
+		</script>
 	</body>
 </html>

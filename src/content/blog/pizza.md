@@ -4,6 +4,8 @@ description: 'Cheese, toppings, tomato sauce on a doughy base'
 pubDate: 'Oct 26 2026'
 author: 'charles'
 estimatedTime: '2 hours'
+isVegan: True
+isDairyFree: True
 heroImage: '../../assets/pizza.jpeg'
 ---
 

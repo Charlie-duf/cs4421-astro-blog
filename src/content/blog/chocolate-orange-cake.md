@@ -4,6 +4,8 @@ description: 'A rich, moist chocolate cake with a deep cocoa flavor.'
 pubDate: 'Oct 19 2026'
 author: 'charles'
 estimatedTime: 'About 3 hours, (only 1 hour if you prepare the oranges ahead of time)'
+isGlutenFree: True
+isDairyFree: True
 heroImage: '../../assets/chocolate-orange-cake.jpeg'
 ---
 

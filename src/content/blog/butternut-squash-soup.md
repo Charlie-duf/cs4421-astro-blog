@@ -4,6 +4,7 @@ description: 'Smooth, creamy, and warming soup'
 pubDate: 'Oct 16 2026'
 author: 'charles'
 estimatedTime: '40-50 minutes (including prep)'
+isGlutenFree: True
 heroImage: '../../assets/Butternut-soup.jpeg'
 ---
 

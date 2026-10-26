@@ -4,6 +4,9 @@ description: 'Crunchy cauliflower spiced and served with tasty chickpeas'
 pubDate: 'Oct 25 2026'
 author: 'charles'
 estimatedTime: '30 minutes'
+isGlutenFree: True
+isVegan: True
+isDairyFree: True
 heroImage: '../../assets/roasted-cauliflower-and-chickpea-salad.jpg'
 ---
 

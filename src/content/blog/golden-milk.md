@@ -4,6 +4,7 @@ description: 'Hot drink to help with sickness'
 pubDate: 'Oct 17 2026'
 author: 'charles'
 estimatedTime: '5 minutes (to heat up milk)'
+isGlutenFree: True
 heroImage: '../../assets/golden-milk.jpeg'
 ---
 
