@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import PlateImage from '../assets/plate.jpeg';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -9,41 +11,47 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.plate-image {
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: 0 auto 2rem;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				<a href="src\pages\about.astro">This is a test </a>(should gottt tttttto the about page with a lot of latin)
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to 
-				<a href="https://docs.astro.build/"> read the docs</a>
-				or <a href="https://astro.build/chat"> join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<Image
+				class="plate-image"
+				src={PlateImage}
+				alt="An empty plate with a fork and knife"
+			/>
+			<section aria-labelledby="welcome-heading">
+				<h1 id="welcome-heading">Welcome to my food blog!</h1>
+				<p>
+					My name is Charlie Duffy, I'm a first year student at Limerick Univeristy studying software engineering. One of my favourite things in this world is food, be it preparing food or eating food. 
+					As such, over my life I have accumulated a multitude of recipes that make the very best food.
+				</p>
+			</section>
+
+			<p><i>To eat is the privilage of the living.</i></p>
+
+			<section aria-labelledby="about-heading">
+				<h2 id="about-heading">New recipes every day!</h2>
+				<p>
+					This site contains a variety of simple, easy to make recipes. Have a look around, theres likely at leas one meal you'll enjoy!
+					I'll add a new recipe every day, so be sure to check back often for new content!
+
+				</p>
+				<p>Want to request a specific recipe or feature? <a href="/about"> Contact me!</a></p>
+			
+				<ol>
+					<li><a href="/blog">Browse the recipes</a></li>
+					<li><a href="/about"> About me!</a></li>
+				</ol>
+			</section>
 		</main>
 		<Footer />
 	</body>

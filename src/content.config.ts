@@ -10,7 +10,11 @@ const blog = defineCollection({
 		z.object({
 			title: z.string(),
 			description: z.string(),
-				author: z.string(),
+			author: z.string(),
+			estimatedTime: z.string(),
+			isVegan: z.boolean().default(false),
+			isGlutenFree: z.boolean().default(false),
+			isDairyFree: z.boolean().default(false),
 			// Transform string to Date object
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
@@ -29,7 +33,7 @@ const blog = defineCollection({
 					.array(
 						z.object({
 							label: z.string(),
-							url: z.string().url("Invalid URL format"),
+							url: z.string().url(),
 						}),
 					)
 					.default([]),
