@@ -1,6 +1,7 @@
 ---
 name: 'Charles Duffy'
 bio: 'Hey! I`m Charlie, a Limerick student studying software engineering. Other than computers I enjoy cooking to relax in the evenings and as such I`ve made this blog to store some of my favourite recipes. Enjoy!'
+quote: 'Eating is the priviledge of the living.'
 avatar: '../../assets/profile.jpg'
 socialLinks:
   - label: 'GitHub'

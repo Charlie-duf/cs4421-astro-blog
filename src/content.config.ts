@@ -28,6 +28,7 @@ const blog = defineCollection({
 			z.object({
 				name: z.string(),
 				bio: z.string(),
+				quote: z.string().optional(),
 				avatar: image(),
 				socialLinks: z
 					.array(
